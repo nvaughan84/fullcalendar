@@ -11,6 +11,7 @@
 
 	$(document).ready(function() {
 		
+		$('.date').datepicker();
 
 		$(".group").change(function () {
 		    $("#calendar").fullCalendar("renderEvents");
@@ -173,6 +174,7 @@
 		.hover{background:#777;}
 		
 		#dialog label{width:80px; display:block; float:left}
+		select, option{width:140px;}
 
 </style>
 </head>
@@ -195,7 +197,23 @@
 	  <form method="POST" action="publish.php">
 	 <div id="dialog">
 	  <label>Title:</label>  <input type="text" name="title"><br>
-	  <label>Repeat:</label> <input type="checkbox" name="unPublishOn">
+	  <label>Date:</label>  <input type="text" name="date" class='date'><br>
+	  <label>Calendar:</label>
+	  <select>
+	  <option>Year 7</option>
+	  <option>Year 8</option>
+	  <option>Year 9</option>
+	  <option>Year 10</option>
+	  <option>Year 11</option>
+	  </select><br>
+	  <label>Repeat:</label>
+	  <select>
+	  <option>No repeat</option>
+	  <option>Every Day</option>
+	  <option>Every Week</option>
+	  <option>Every Month</option>
+	  <option>Every Year</option>
+	  </select><br>
 	 </div>
 	</form>
 	</div>
@@ -205,8 +223,23 @@
 	  <form method="POST" action="publish.php">
 	 <div id="dialog">
 	  <label>Title:</label>  <input type="text" name="title"><br>
-	  <label>Date:</label>  <input type="text" name="date"><br>
-	  <label>Repeat:</label> <input type="checkbox" name="unPublishOn">
+	  <label>Date:</label>  <input type="text" name="date" class='date'><br>
+	  <label>Calendar:</label>
+	  <select>
+	  <option>Year 7</option>
+	  <option>Year 8</option>
+	  <option>Year 9</option>
+	  <option>Year 10</option>
+	  <option>Year 11</option>
+	  </select><br>
+	  	  <label>Repeat:</label>
+	  <select>
+	  <option>No repeat</option>
+	  <option>Every Day</option>
+	  <option>Every Week</option>
+	  <option>Every Month</option>
+	  <option>Every Year</option>
+	  </select><br
 	 </div>
 	</form>
 	</div>
